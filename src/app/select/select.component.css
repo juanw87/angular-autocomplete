@@ -1,0 +1,32 @@
+.upper-search-box{
+    position: absolute;
+    float:left;
+    z-index:99;
+    width: 100%;
+    background-color: white;
+}
+
+.search-box{
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color:black;
+    border-width: thin;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-box .item{    
+    padding-left:8px;
+}
+
+.search-box .item:hover{
+    color:white;
+    background-color:lightgray;
+    cursor: pointer;
+}
+
+.selected{    
+    color:white;
+    background-color: gray;
+}

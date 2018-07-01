@@ -1,0 +1,11 @@
+<div>
+  <h2>ANGULAR SELECT</h2>
+  <form class="form-group" autocomplete="off">
+    <input name="busqueda" type="text" class="form-control" [(ngModel)]="target.descripcion" (keyup)="getKeysEvents($event, target)" placeholder="search content"/>
+    <div class="upper-search-box">
+        <div class="search-box" *ngIf="result.length > 0">
+            <div class="item" *ngFor="let data of result;let i = index"  [ngClass]='{selected: i == counter}' (click)="seleccionar(data)"><span>{{data.descripcion}}</span></div>
+        </div>  
+    </div>      
+  </form>  
+</div>
